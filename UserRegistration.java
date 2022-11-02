@@ -7,8 +7,8 @@ public class UserRegistration {
     public static boolean isValidUsername(String name)
     {
 
-        String regex = "^[A-Za-z]\\w{5,29}$";
-
+//        String regex = "^[A-Za-z]\\w{5,29}$";
+        String regex = "^[A-Za-z0-9+_.-]+@(.+)$";
         Pattern p = Pattern.compile(regex);
 
 
@@ -25,9 +25,9 @@ public class UserRegistration {
     // Driver Code
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Your Last Name");
-        String lname = sc.nextLine();
-        System.out.println(isValidUsername(lname));
+        System.out.println("Enter Your Email");
+        String email = sc.nextLine();
+        System.out.println(isValidUsername(email));
     }
 
 
