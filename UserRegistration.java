@@ -25,9 +25,9 @@ public class UserRegistration {
     // Driver Code
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Your Name");
-        String fname = sc.nextLine();
-        System.out.println(isValidUsername(fname));
+        System.out.println("Enter Your Last Name");
+        String lname = sc.nextLine();
+        System.out.println(isValidUsername(lname));
     }
 
 
