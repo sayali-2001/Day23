@@ -3,13 +3,14 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 //Enter Valid Password
-//Should Have Minimum 8 Characters
+//Should Have At Least 1 Upper Case
 public class UserRegistration {
     public static boolean isValidUsername(String name)
     {
 
 //        String regex = "[789]{1}[0-9]{9}";
-        String regex = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]$";
+        String regex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]$";
+
 
         Pattern p = Pattern.compile(regex);
 
